@@ -23,3 +23,10 @@ Click [here](https://github.com/StephenGrider/ReactStarter/releases) then downlo
 	> npm install
 	> npm start
 ```
+
+####My Notes (Luke)
+I'm using this repo as a general react/redux reference.
+
+Other things to keep in mind not found in this code base:
+
+redux-reselect: A tool to combine multiple pieces of state into a calculated piece of state. (https://www.udemy.com/react-redux/learn/v4/t/lecture/5691842)
