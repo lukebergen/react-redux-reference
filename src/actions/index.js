@@ -11,35 +11,39 @@ const API_KEY = '?key=lukebergen-react-redux-reference';
 export function fetchPosts() {
   const request = axios.get(`${ROOT_URL}/posts${API_KEY}`);
 
-  return {
-    type: FETCH_POSTS,
-    payload: request // TODO: swap this out to use thunk instead of redux-promise
+  return (dispatch) => {
+    request.then(({data}) => {
+      dispatch({ type: FETCH_POSTS, payload: data });
+    });
   };
 }
 
 export function createPost(props) {
   const request = axios.post(`${ROOT_URL}/posts${API_KEY}`, props);
 
-  return {
-    type: CREATE_POST,
-    payload: request // TODO: swap this out to use thunk instead of redux-promise
+  return (dispatch) => {
+    request.then(({data}) => {
+      dispatch({ type: CREATE_POST, payload: data });
+    });
   };
 }
 
 export function fetchPost(id) {
   const request = axios.get(`${ROOT_URL}/posts/${id}${API_KEY}`);
 
-  return {
-    type: FETCH_POST,
-    payload: request // TODO: swap this out to use thunk instead of redux-promise
+  return (dispatch) => {
+    request.then(({data}) => {
+      dispatch({ type: FETCH_POST, payload: data });
+    });
   };
 }
 
 export function deletePost(id) {
   const request = axios.delete(`${ROOT_URL}/posts/${id}${API_KEY}`);
 
-  return {
-    type: DELETE_POST,
-    payload: request // TODO: swap this out to use thunk instead of redux-promise
+  return (dispatch) => {
+    request.then(({data}) => {
+      dispatch({ type: DELETE_POST, payload: data });
+    });
   };
 }
