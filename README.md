@@ -1,3 +1,27 @@
+# React Redux Reference Repo
+
+I'm using this repo as a general react/redux reference.
+
+It's a clone of [Stephen Grider's ReactStarter repo](https://github.com/StephenGrider/ReactStarter) that I've filled out based on the fourth app built in [this udemy react-redux tutorial](https://www.udemy.com/react-redux) with slight modifications for my own note taking/preferences.
+
+#### Quickstart
+
+```
+$ brew install node # Skip if you already have node/npm installed
+$ git clone https://github.com/lukebergen/react-redux-reference.git
+$ cd react-redux-reference
+$ npm install
+$ npm start
+$ # now hit localhost:8080 to see the running app
+```
+
+#### Other things to keep in mind or check out not found in this code base.
+
+- redux-reselect: A tool to combine multiple pieces of state into a calculated piece of state. (https://www.udemy.com/react-redux/learn/v4/t/lecture/5691842)
+
+
+#### Below: Original readme from upstream repo...
+
 # ReduxSimpleStarter
 
 Interested in learning [Redux](https://www.udemy.com/react-redux/)?
@@ -23,10 +47,3 @@ Click [here](https://github.com/StephenGrider/ReactStarter/releases) then downlo
 	> npm install
 	> npm start
 ```
-
-####My Notes (Luke)
-I'm using this repo as a general react/redux reference.
-
-Other things to keep in mind not found in this code base:
-
-redux-reselect: A tool to combine multiple pieces of state into a calculated piece of state. (https://www.udemy.com/react-redux/learn/v4/t/lecture/5691842)
